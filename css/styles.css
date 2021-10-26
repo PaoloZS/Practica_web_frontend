@@ -46,3 +46,71 @@ h1{font-size: 4rem;}
 h2{font-size: 3.2rem;}
 h3{font-size: 2.4rem;}
 /*.golbales*/
+/*header*/
+.header{
+    display: flex;
+    justify-content: center;
+}
+.header__logo{
+    margin: 3rem 0;
+}/*.header*/
+/**footer**/
+.footer{
+    background-color: var(--primario);
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+.footer__texto{
+    font-family: var(--primarioOscuro);
+    text-align: center;
+    font-size: 2.2rem;
+}
+/**.footer**/
+/*Navegacion*/
+.navegacion{
+    background-color: var(--primarioOscuro);
+    padding: 1rem 0;/*aumentar el tamaño de espacio*/
+    display: flex;
+    justify-content: center;
+    gap: 2rem;/*separar los elementos*/
+}
+.navegacion__enlace{
+    font-family: var(--fuentePrincipal);
+    color: var(--blanco);
+    font-size: 2.5rem;
+}
+.navegacion__enlace:last-of-type{/*pseudo selector que escoje el ultimo elemento similar*/
+    margin-right: 0;
+}
+.navegacion__enlace--activo, 
+.navegacion__enlace:hover {
+    color:var(--secundario);
+}
+body .navegacion{
+    display: flex;
+    justify-content: center;
+}
+/**GRID**/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 768){
+    .grid{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+/**.Grid**/
+/**Productos**/
+.producto{
+    background-color: var(--primarioOscuro);
+}
+.producto__imagen{
+
+}
+.producto__informacion{
+
+}
+.producto__precio{
+
+}
